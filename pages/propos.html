@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali El Kailani</title>
+    <link rel="stylesheet" href="../css/propos.css">
+    <link rel="icon" type="image/svg" href="../images/logo.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html">
+          <!--<img src="../images/logo.svg" alt="">-->
+        </a>
+            <ul class="links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./project.html">PROJECTS </a></li>
+                <li><a href="./propos.html" class="active">À PROPOS <div></div></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="proposMain">
+            <div class="propos">
+                <h4>Bonjour.</h4>
+                <p id="propfirstPara">
+                    Je suis Ali El Kailani, diplômé d’un Master Création Numérique parcours UX/UI Design, je suis désormais à la recherche d'opportunités professionnelles pour mettre en pratique mes compétences acquises durant ces dernières années.
+                </p>
+            </br>
+                <p id="propSecPara">Un projet, une idée, une suggestion ? N'hésitez pas à me laisser un mot !
+                </p>
+                <h3 class="emailIon">EMAIL <img src="../images/arrow1.png"></h3>
+                <a class="propBottom" href="mailto:ali.elkailani20@gmail.com">ALI.ELKAILANI20[at]GMAIL.COM</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor-red"></div>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const active = document.querySelector(".active div");
+            active.style.animation = 'active 2s'
+        });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

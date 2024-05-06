@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali El Kailani</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="icon" type="image/svg" href="../images/logo.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div  class="header">
+          <a href="../index.html">
+            <!--<img src="./images/logo.svg" alt="">-->
+        </a>
+            <ul class="links">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="./project.html" class="active">PROJECTS<div></div></a></li>
+              <li><a href="./propos.html">À PROPOS</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="projects">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="parant">
+              <div class="swiper-slide">
+                <a href="./lasalle.html">
+                  <div class="img-01">
+                <img class="slider-img" src="../images/project.jpg" alt="">
+              </div>
+                <h2>LASALLE</h2>
+              </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./univarena.html">
+                  <div class="img-01">
+                  <img class="slider-img" src="../images/univarena.jpg" alt="">
+                </div>
+                  <h2>UNIVARENA</h2>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./Vinyle.html">
+                  <div class="img-01">
+                  <img class="slider-img" src="../images/vinylerecords.jpg" alt="">
+                  </div>
+                  <h2>VINYLE RECORDS</h2>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./composit.html">
+                  <div class="img-01">
+                  <img class="slider-img" src="../images/compositsplash.jpg" alt="">
+                </div>
+                  <h2>COMPOSE'IT</h2>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./alumni.html">
+                  <div class="img-01">
+                  <img class="slider-img" src="../images/sri.jpg" alt="">
+                </div>
+                  <h2>ALUMNI</h2>
+                </a>
+              </div>
+              <!--<div class="swiper-slide">
+                <a href="./ramle.html">
+                  <div class="img-01">
+                  <img class="slider-img" src="../images/ramle.jpg" alt="">
+                </div>
+                  <h2>RAMLE TRAITEUR</h2>
+                </a>
+              </div>-->
+            </div>
+            <div id="next">
+            <input class="swiper-button-next btn btnNext" id="nextbtn"/>
+            <label for="nextbtn">
+              <div class="button button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false" style="display: block;"></div>
+              <div class="btn" id="btn" onmousemove="moveArrow(event)"><img id="img" src="../images/arror-right1.png" alt=""></div>
+            </label>
+          </div>
+            <div id="prev">
+            <input class="swiper-button-prev btnprev" id="nextprev"/>
+            <label for="nextprev">
+              <div class="btn2" id="btn2" onmousemove="moveArrow2(event)"><img id="img2" src="../images/arror-right1.png" alt=""></div>
+            </label>
+          </div>
+          </div>        
+    </div>
+    <div id="dots-parant">
+    <div class="cursor-red"></div>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/Slider.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+const active = document.querySelector(".active div");
+active.style.animation = 'active 2s'
+});
+</script>
+</body>
+</html>

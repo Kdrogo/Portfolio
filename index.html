@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali El Kailani</title>
+    <link rel="icon" type="image/svg" href="images/logo.svg" />
+    <!-- <link rel="stylesheet" href="./css/project.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <div  class="header">
+            <a href="index.html">
+            <!--<img src="./images/logo.svg" alt="">-->
+        </a>
+            <ul class="links">
+              <li><a href="./index.html"  class="active">HOME<div></div></a></li>
+              <li><a href="./pages/project.html">PROJECTS</a></li>
+              <li><a href="./pages/propos.html">À PROPOS</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="color"></div>
+    <div class="homeBody">
+        <div class="homeImg" id="homeImg">
+            <img class="hero-image" id="hero-image" src="./images/photo-ali.png" alt="">
+            <h3>(DRAG IT)</h3>
+        </div>
+        <div class="content">
+            <h1>Ali El Kailani</h1>
+        </div>
+        <div class="homeBottom">
+            <a href="pages/project.html">Découvrir</a>
+            <hr>
+        </div>
+    </div>
+    <div id="dots-parant">
+        <div class="cursor-red"></div>
+        <div class="cursor-dot-outline"></div>
+        <div class="cursor-dot"></div>
+      </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            
+            const colorElement = document.querySelector(".color");
+            const active = document.querySelector(".active div");
+            active.style.animation = 'active 2s'
+            const homeBodyElement = document.querySelector(".homeBody");
+            // Get the duration of the color animation
+            const colorAnimationDuration = parseFloat(getComputedStyle(colorElement).animationDuration);
+            
+            // Set a timeout to start the homeBody animation after the color animation finishes plus 10 seconds
+            setTimeout(function() {
+                // alert('hellow')
+                homeBodyElement.style.animation = "animation2 8s ease forwards";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
+<script>
+    
+</script>
